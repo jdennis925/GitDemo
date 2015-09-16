@@ -1,4 +1,4 @@
-﻿<Window x:Class="GitDemoApplication.MainWindow"
+﻿<Window x:Name="theMainWindow" x:Class="GitDemoApplication.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Label Content="This is a boring label" Margin="118,80,258,207" RenderTransformOrigin="0.5,0.5">
+        <Label Name="lblFlashy" Content="This is a boring label" Margin="118,80,258,207" RenderTransformOrigin="0.5,0.5" MouseEnter="MouseEnter">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
-                    <SkewTransform/>
+                    <SkewTransform AngleX="-5"/>
                     <RotateTransform Angle="-28.296"/>
                     <TranslateTransform/>
                 </TransformGroup>
