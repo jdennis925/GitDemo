@@ -24,10 +24,5 @@ namespace GitDemoApplication
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Git is awesome.");
-        }
     }
 }
