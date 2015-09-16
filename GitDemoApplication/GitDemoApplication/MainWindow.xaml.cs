@@ -27,7 +27,7 @@ namespace GitDemoApplication
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Git is awesome.");
+            MessageBox.Show("Hello!");
         }
     }
 }
