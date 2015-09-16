@@ -7,7 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Content="Button" BorderBrush="{x:Null}" Foreground="{x:Null}" Margin="95,86,351,183">
+        <Button Content="Button" BorderBrush="{x:Null}" Foreground="{x:Null}" Margin="367,104,79,165" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="44.947"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Background" Value="Green"/>
